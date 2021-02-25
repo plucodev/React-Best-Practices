@@ -1,18 +1,16 @@
 import {React} from "react";
-
 import PropTypes from 'prop-types'
 
-const Home = props => {
+const Apis = props => {
     return (
         <div>
-            Home Page
-
+            Api's Page
         </div>
     )
 }
 
-Home.propTypes = {
+Apis.propTypes = {
 
 }
 
-export default Home
+export default Apis

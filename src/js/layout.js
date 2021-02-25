@@ -1,10 +1,12 @@
 import React from "react";
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 
-import Home from "../js/views/home";
-import Navbar from "../js/components/navbar";
 import injectContext from "./store/projectContext";
 import ScrollToTop from "./components/scrollToTop";
+
+import Home from "../js/views/home";
+import Navbar from "../js/components/navbar";
+import Apis from "../js/views/apis";
 
 const Layout = () => {
     //the basename is used when your project is published in a subdirectory and not in the root of the domain
@@ -19,6 +21,9 @@ const Layout = () => {
                     <Switch>
                         <Route exact path="/">
                             <Home />
+                        </Route>
+                        <Route exact path="/apis">
+                            <Apis />
                         </Route>
 
                         <Route>
