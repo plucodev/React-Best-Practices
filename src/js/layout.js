@@ -7,6 +7,7 @@ import ScrollToTop from "./components/scrollToTop";
 import Home from "../js/views/home";
 import Navbar from "../js/components/navbar";
 import Apis from "../js/views/apis";
+import Hooks from "../js/views/hooks";
 
 const Layout = () => {
     //the basename is used when your project is published in a subdirectory and not in the root of the domain
@@ -24,6 +25,9 @@ const Layout = () => {
                         </Route>
                         <Route exact path="/apis">
                             <Apis />
+                        </Route>
+                        <Route exact path="/hooks">
+                            <Hooks />
                         </Route>
 
                         <Route>

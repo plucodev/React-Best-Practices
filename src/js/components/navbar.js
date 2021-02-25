@@ -18,6 +18,9 @@ const Navbar = props => {
                         <li className="nav-item">
                             <Link className="nav-link" to="/apis">API's</Link>
                         </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/hooks">Hooks</Link>
+                        </li>
                         <li className="nav-item dropdown">
                             <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Dropdown
