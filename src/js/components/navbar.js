@@ -2,10 +2,10 @@ import React, {useState, useContext} from "react";
 import PropTypes from 'prop-types'
 import {Link} from "react-router-dom";
 import {Context} from '../store/projectContext';
+import Search from './search';
 
 const Navbar = props => {
     const {store, actions} = useContext(Context)
-    const [searchInput, setSearchInput] = useState();
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-purple">
             <div className="container-fluid">
@@ -39,10 +39,7 @@ const Navbar = props => {
                             <Link className="nav-link disabled" to="#" tabIndex="-1" aria-disabled="true">Disabled</Link>
                         </li>
                     </ul>
-                    <form className="d-flex">
-                        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" onChange={e => setSearchInput(e.target.value)} />
-                        <button className="btn btn-outline-success" type="button" onClick={() => actions.search(searchInput)}>Search</button>
-                    </form>
+                    <Search />
                 </div>
             </div>
         </nav>
